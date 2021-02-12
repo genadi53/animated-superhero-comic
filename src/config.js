@@ -44,7 +44,6 @@ export default {
           container: '.rock',
           initPos: { y: -500 },
           endPos: { y: 950 },
-          rockTarget: '.rock-target',
         }
       },
     },
