@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GSAP Boilerplate Project</title>
+
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			overflow:hidden;
+      background-image: url('./src/assets/background.jpg');
+      background-position: center top;
+      background-size: 100% cover;
+      background-repeat: no-repeat;
+		}
+    /**planet styles **/
+    .planet {
+      position: absolute;
+      transform-origin: center;
+    }
+    .small {
+      top: 520px;
+      left: 35px;
+    }
+    .medium {
+      top: 300px;
+      left: 50px;
+    }
+    .big {
+      top: 550px;
+      left: 150px;
+    }
+    .huge {
+      top: 150px;
+      left: 1400px;
+    }
+    /** speech styles **/
+    .speech-bubble {
+      position: absolute;
+      opacity: 0;
+    }
+    .text {
+      position: absolute;
+      opacity: 0;
+    }
+    /** character styles **/
+    .character {
+      position: absolute;
+      z-index: 1;
+    }
+    /** Dormammu styles **/
+    .dormammu-speech-bubble {
+      top: -40px;
+      left: 230px;
+    }
+    .dormammu-character {
+      top: 450px;
+      left: 160px;
+    }
+    .dormammu-body {
+      z-index: 1;
+    }
+    .dormammu-beam {
+      top: 140px;
+      left: 50px;
+      z-index: 2;
+      opacity: 0;
+    }
+    .dormammu-shadow {
+      top: 910px;
+      left: 200px;
+      z-index: 0;
+    }
+    /** Dr strange styles **/
+    .dr-strange-speech-bubble {
+      top: -100px;
+    }
+    .dr-strange-speech-bubble > img {
+      opacity: 1;
+    }
+    .dr-strange-character {
+      top: 475px;
+      left: 1160px;
+      opacity: 0;
+    }
+    .part {
+      position: absolute;
+    }
+    .dr-strange-head {
+      top: 24px;
+      left: 200px;
+      z-index: 6;
+    }
+    .dr-strange-body {
+      z-index: 1;
+    }
+    .dr-strange-arm-left {
+      top: 130px;
+      left: 270px;
+      z-index: 5;
+    }
+    .dr-strange-arm-right {
+      top: 31px;
+      left: 55px;
+      z-index: 4;
+    }
+    .dr-strange-leg-left {
+      top: 302px;
+      left: 243px;
+      z-index: 3;
+    }
+    .dr-strange-leg-right {
+      top: 302px;
+      left: 72px;
+      z-index: 2;
+    }
+    .dr-strange-shadow {
+      top: 380px;
+      left: 50px;
+      z-index: 0;
+    }
+    /** portal styles **/
+    .portal {
+      position: absolute;
+      top: 500px;
+      left: 1100px;
+      height: 500px;
+      transform-origin: center;
+    }
+    /** spikes styles **/
+    .spikes {
+      position: absolute;
+      top: 850px;
+      left: 1120px;
+      opacity: 0;
+      z-index: 0;
+    }
+    .spike {
+      margin: 0px 50px;
+      height: 200px;
+    }
+    .spike-left {
+      transform: rotate(45deg);
+    }
+    .spike-right {
+      transform: rotate(-45deg);
+    }
+    /** rock styles **/
+    .rock {
+      position: absolute;
+      top: -500px;
+      left: 1150px;
+      z-index: 1;
+    }
+	</style>
+
+</head>
+<body>
+<div class="planets">
+  <img class="planet small" src="/src/assets/planet1.png">
+  <img class="planet medium" src="/src/assets/planet2.png">
+  <img class="planet big" src="/src/assets/planet3.png">
+  <img class="planet huge" src="/src/assets/planet4.png">
+</div>
+<div class="character dormammu-character">
+  <div class="speech-bubble dormammu-speech-bubble">
+    <img class="text text-loop-0" src="src/assets/text1.png">
+    <img class="text text-loop-1" src="src/assets/text2.png">
+    <img class="text text-main" src="src/assets/text3.png">
+  </div>
+  <img class="part dormammu-body" src="/src/assets/ch1.png">
+  <img class="part dormammu-beam" src="/src/assets/beam.png">
+</div>
+<img class=" part dormammu-shadow" src="./src/assets/ch1Shadow.png">
+<img class="portal" src="/src/assets/ch2Portal.png">
+<div class="character dr-strange-character">
+  <div class="speech-bubble dr-strange-speech-bubble">
+    <img class="text" src="./src/assets/text4.png">
+  </div>
+  <img class="part dr-strange-head" src="src/assets/ch2Head.png">
+  <img class="part dr-strange-body" src="src/assets/ch2Body.png">
+  <img class="part dr-strange-arm-left" src="src/assets/ch2ArmL.png">
+  <img class="part dr-strange-arm-right" src="src/assets/ch2ArmR.png">
+  <img class="part dr-strange-leg-left" src="src/assets/ch2LedL.png">
+  <img class="part dr-strange-leg-right" src="src/assets/ch2LegR.png">
+  <img class="part dr-strange-shadow" src="src/assets/ch2Shadow.png">
+</div>
+<div class="spikes">
+  <img class="spike spike-left" src="/src/assets/spike1.png">
+  <img class="spike spike-middle" src="/src/assets/spike1.png">
+  <img class="spike spike-right" src="/src/assets/spike1.png">
+</div>
+<img class="rock" src="/src//assets/theRock.png">
+</body>
+</html>
